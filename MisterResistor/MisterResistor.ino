@@ -248,7 +248,7 @@ String askColor ()
     // wait for button to be unpressed
     while (digitalRead(yesButton)) {
       if (digitalRead(switchPin)) {
-        break;
+        return "X";
       }
     }
     return "BLACK";
